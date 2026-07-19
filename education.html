@@ -3,85 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Education</title>
     <style>
-      /* ================= EDUCATION SECTION ================= */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(0, 119, 182, 0.14),
+            transparent 35%
+          ),
+          linear-gradient(135deg, #09121f, #12233a 55%, #111827);
+        color: #edf7ff;
+      }
 
       #education {
-        padding: 80px 8%;
-        background: #f8f9fa;
+        padding: 24px 5%;
       }
 
       .education-title {
         text-align: center;
-        font-size: 42px;
-        color: #0077b6;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #6ee7f9;
       }
 
       .education-subtitle {
         text-align: center;
-        color: #555;
-        margin: 15px auto 50px;
-        max-width: 700px;
-        line-height: 1.6;
+        color: #d5e4f6;
+        margin: 12px auto 28px;
+        max-width: 760px;
+        line-height: 1.7;
       }
 
       .education-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+        max-width: 1180px;
+        margin: 0 auto;
       }
 
       .education-card {
-        background: #fff;
-        padding: 30px;
+        background: rgba(8, 17, 32, 0.82);
+        padding: 24px;
         border-radius: 18px;
         text-align: center;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        transition: 0.3s;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+        transition: 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .education-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-8px);
       }
 
       .education-icon {
-        font-size: 45px;
-        margin-bottom: 15px;
+        font-size: 44px;
+        margin-bottom: 12px;
       }
 
       .education-card h3 {
-        color: #0077b6;
+        color: #6ee7f9;
         margin-bottom: 10px;
       }
 
-      .education-card h4 {
-        color: #333;
-        margin-bottom: 15px;
-        font-weight: 600;
-      }
-
+      .education-card h4,
       .education-card p {
-        color: #555;
-        margin: 8px 0;
-        line-height: 1.6;
-      }
-
-      /* Responsive */
-
-      @media (max-width: 768px) {
-        #education {
-          padding: 60px 5%;
-        }
-
-        .education-title {
-          font-size: 34px;
-        }
+        color: #d9e7f7;
+        line-height: 1.7;
       }
     </style>
   </head>
   <body>
+    <header class="portfolio-header">
+      <div class="topbar">Personal Portfolio</div>
+      <div class="nav-shell">
+        <div class="brand-name">Arockia Varsha M</div>
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="portfolio-nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cert.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <!-- ================= EDUCATION SECTION ================= -->
 
     <section id="education">
@@ -128,5 +150,15 @@
         </div>
       </div>
     </section>
+    <script>
+      const toggleButton = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#portfolio-nav-links");
+      if (toggleButton && navLinks) {
+        toggleButton.addEventListener("click", () => {
+          const isOpen = navLinks.classList.toggle("open");
+          toggleButton.setAttribute("aria-expanded", isOpen);
+        });
+      }
+    </script>
   </body>
 </html>

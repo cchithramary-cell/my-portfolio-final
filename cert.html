@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Certificates</title>
 
     <style>
@@ -14,138 +15,121 @@
       }
 
       body {
-        background: linear-gradient(180deg, #f7fbff 0%, #eef3f8 100%);
+        background:
+          radial-gradient(circle at top left, rgba(0, 119, 182, 0.15), transparent 30%),
+          linear-gradient(135deg, #07111f, #0c1b2f 58%, #111827);
+        color: #edf7ff;
       }
 
-      /*================= CERTIFICATES =================*/
-
       #certificates {
-        width: 90%;
+        width: min(1180px, 92%);
         margin: auto;
-        padding: 60px 0;
+        padding: 24px 0 40px;
       }
 
       .certificate-title {
         text-align: center;
-        color: #0077b6;
-        font-size: 42px;
-        margin-bottom: 15px;
+        color: #6ee7f9;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 12px;
       }
 
       .certificate-subtitle {
         text-align: center;
-        color: #555;
-        width: 80%;
-        margin: auto;
+        color: #d6e5f5;
+        width: min(800px, 100%);
+        margin: 0 auto 30px;
         line-height: 1.7;
-        margin-bottom: 50px;
       }
 
       .category-heading {
-        margin-top: 60px;
-        margin-bottom: 26px;
-        padding: 12px 18px;
-        color: #023e8a;
-        font-size: 32px;
-        border-left: 5px solid #0077b6;
-        background: rgba(0, 119, 182, 0.08);
+        margin-top: 38px;
+        margin-bottom: 18px;
+        padding: 10px 16px;
+        color: #fff;
+        font-size: 1.7rem;
+        border-left: 5px solid #6ee7f9;
+        background: rgba(110, 231, 249, 0.12);
         border-radius: 12px;
         display: inline-block;
       }
 
       .certificate-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
       }
 
       .certificate-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f5fbff 100%);
-        padding: 25px;
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        background: rgba(8, 17, 32, 0.82);
+        padding: 22px;
+        border-radius: 18px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
         transition: 0.3s;
-        flex: 1 1 260px;
-        max-width: 320px;
-        min-height: 260px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid #d8edf8;
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .certificate-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        border-color: #90e0ef;
       }
 
       .certificate-card h3 {
-        color: #0077b6;
-        margin-bottom: 15px;
+        color: #6ee7f9;
+        margin-bottom: 12px;
       }
 
       .certificate-card p {
-        color: #555;
+        color: #d8e6f6;
         margin-bottom: 10px;
         line-height: 1.6;
       }
 
       .certificate-btn {
-        margin-top: 20px;
+        margin-top: 18px;
       }
 
       .certificate-btn a {
         text-decoration: none;
-        background: linear-gradient(135deg, #0077b6, #0096c7);
+        background: linear-gradient(135deg, #f97316, #ff7b54);
         color: white;
-        padding: 10px 20px;
-        border-radius: 30px;
-        transition: 0.3s;
+        padding: 10px 18px;
+        border-radius: 999px;
         display: inline-block;
-        box-shadow: 0 6px 14px rgba(0, 119, 182, 0.25);
+        font-weight: 700;
       }
 
-      .certificate-btn a:hover {
-        background: linear-gradient(135deg, #023e8a, #0077b6);
-        transform: translateY(-2px);
-      }
-
-      @media (max-width: 900px) {
-        .certificate-card {
-          flex: 1 1 45%;
-          max-width: 100%;
-        }
-      }
-
-      @media (max-width: 768px) {
-        #certificates {
-          width: 95%;
-        }
-
-        .certificate-title {
-          font-size: 34px;
-        }
-
-        .certificate-subtitle {
+      @media (max-width: 640px) {
+        .certificate-btn a {
           width: 100%;
-        }
-
-        .category-heading {
-          font-size: 26px;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .certificate-card {
-          flex: 1 1 100%;
+          text-align: center;
         }
       }
     </style>
   </head>
 
   <body>
+    <header class="portfolio-header">
+      <div class="topbar">Personal Portfolio</div>
+      <div class="nav-shell">
+        <div class="brand-name">Arockia Varsha M</div>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="portfolio-nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cert.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <section id="certificates">
       <h1 class="certificate-title">Certificates</h1>
 
@@ -486,5 +470,15 @@
    
       </div>
     </section>
+    <script>
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('#portfolio-nav-links');
+      if (toggleButton && navLinks) {
+        toggleButton.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          toggleButton.setAttribute('aria-expanded', isOpen);
+        });
+      }
+    </script>
   </body>
 </html>

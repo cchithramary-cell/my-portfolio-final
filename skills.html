@@ -3,85 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Skills</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <style>
-      /*==================== SKILLS ====================*/
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(0, 119, 182, 0.14),
+            transparent 35%
+          ),
+          linear-gradient(135deg, #06101d, #0d1c35 60%, #101827);
+        color: #eef6ff;
+      }
 
       #skills {
-        padding: 80px 8%;
-        background: #f4f8fb;
+        padding: 24px 5%;
       }
 
       .skills-title {
         text-align: center;
-        font-size: 42px;
-        color: #0077b6;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #6ee7f9;
       }
 
       .skills-subtitle {
         text-align: center;
-        margin: 15px auto 50px;
-        color: #555;
-        max-width: 700px;
-        line-height: 1.6;
+        margin: 12px auto 28px;
+        color: #d3e2f0;
+        max-width: 760px;
+        line-height: 1.7;
       }
 
       .skills-container {
         display: grid;
-
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        max-width: 1180px;
+        margin: 0 auto;
       }
 
       .skill-card {
-        background: white;
-
+        background: rgba(8, 17, 32, 0.8);
         border-radius: 20px;
-
-        padding: 30px;
-
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-
-        transition: 0.4s;
-
+        padding: 28px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+        transition: 0.3s ease;
         text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .skill-card:hover {
-        transform: translateY(-10px);
-
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
       }
 
       .skill-icon {
-        font-size: 45px;
-
-        color: #0077b6;
-
-        margin-bottom: 20px;
+        font-size: 46px;
+        color: #6ee7f9;
+        margin-bottom: 18px;
       }
 
       .skill-card h3 {
-        margin-bottom: 20px;
-
-        color: #222;
+        margin-bottom: 18px;
+        color: #ffffff;
       }
 
       .skill-card ul {
         list-style: none;
+        padding: 0;
+        margin: 0;
       }
 
       .skill-card li {
-        padding: 12px;
-
-        border-bottom: 1px solid #ddd;
-
-        font-size: 17px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        font-size: 1rem;
+        color: #dfeaf8;
       }
 
       .skill-card li:last-child {
@@ -89,25 +97,41 @@
       }
 
       .skill-card li i {
-        color: #0077b6;
-
+        color: #6ee7f9;
         width: 25px;
       }
 
-      /* Responsive */
-
-      @media (max-width: 768px) {
-        #skills {
-          padding: 60px 5%;
-        }
-
-        .skills-title {
-          font-size: 34px;
+      @media (max-width: 640px) {
+        .skill-card {
+          padding: 20px;
         }
       }
     </style>
   </head>
   <body>
+    <header class="portfolio-header">
+      <div class="topbar">Personal Portfolio</div>
+      <div class="nav-shell">
+        <div class="brand-name">Arockia Varsha M</div>
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="portfolio-nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cert.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <!--================== SKILLS ==================-->
 
     <section id="skills">
@@ -183,5 +207,15 @@
         </div>
       </div>
     </section>
+    <script>
+      const toggleButton = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#portfolio-nav-links");
+      if (toggleButton && navLinks) {
+        toggleButton.addEventListener("click", () => {
+          const isOpen = navLinks.classList.toggle("open");
+          toggleButton.setAttribute("aria-expanded", isOpen);
+        });
+      }
+    </script>
   </body>
 </html>
