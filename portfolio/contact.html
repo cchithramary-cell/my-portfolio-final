@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f4f8fb;
+      }
+
+      /*--------------------*/
+
+      #contact {
+        padding: 80px 8%;
+      }
+
+      .contact-title {
+        text-align: center;
+
+        font-size: 42px;
+
+        color: #0077b6;
+
+        margin-bottom: 15px;
+      }
+
+      .contact-subtitle {
+        text-align: center;
+
+        max-width: 700px;
+
+        margin: auto;
+
+        color: #555;
+
+        line-height: 1.8;
+
+        margin-bottom: 50px;
+      }
+
+      /*--------------------*/
+
+      .contact-container {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 25px;
+      }
+
+      /*--------------------*/
+
+      .contact-card {
+        background: white;
+
+        padding: 25px;
+
+        border-radius: 18px;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+        transition: 0.3s;
+
+        text-align: center;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-8px);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .contact-card i {
+        font-size: 42px;
+
+        color: #0077b6;
+
+        margin-bottom: 15px;
+      }
+
+      .contact-card h3 {
+        color: #0077b6;
+
+        margin-bottom: 10px;
+      }
+
+      .contact-card p {
+        color: #555;
+
+        margin-bottom: 20px;
+
+        line-height: 1.6;
+      }
+
+      .contact-card a {
+        text-decoration: none;
+
+        background: #0077b6;
+
+        color: white;
+
+        padding: 10px 20px;
+
+        border-radius: 30px;
+
+        display: inline-block;
+
+        transition: 0.3s;
+      }
+
+      .contact-card a:hover {
+        background: #023e8a;
+      }
+
+      /*--------------------*/
+
+      .resume {
+        margin-top: 60px;
+
+        text-align: center;
+      }
+
+      .resume h2 {
+        color: #0077b6;
+
+        margin-bottom: 15px;
+      }
+
+      .resume p {
+        color: #555;
+
+        margin-bottom: 25px;
+      }
+
+      .resume a {
+        text-decoration: none;
+
+        background: #0077b6;
+
+        color: white;
+
+        padding: 12px 25px;
+
+        border-radius: 30px;
+
+        transition: 0.3s;
+      }
+
+      .resume a:hover {
+        background: #023e8a;
+      }
+      .contact-logo {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+
+      /*--------------------*/
+
+      .footer-text {
+        margin-top: 70px;
+
+        text-align: center;
+
+        color: #555;
+
+        line-height: 1.8;
+      }
+
+      /*--------------------*/
+
+      @media (max-width: 768px) {
+        .contact-title {
+          font-size: 34px;
+        }
+      }
+      /*================ THANK YOU SECTION ================*/
+
+      .thank-you {
+        margin-top: 70px;
+
+        background: white;
+
+        padding: 45px;
+
+        border-radius: 20px;
+
+        text-align: center;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .thank-you h2 {
+        color: #0077b6;
+
+        margin-bottom: 20px;
+
+        font-size: 32px;
+      }
+
+      .thank-you p {
+        color: #555;
+
+        line-height: 1.8;
+
+        margin-bottom: 18px;
+
+        max-width: 750px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+      }
+
+      .message-btn {
+        display: inline-block;
+
+        margin-top: 20px;
+
+        text-decoration: none;
+
+        background: #0077b6;
+
+        color: white;
+
+        padding: 14px 30px;
+
+        border-radius: 30px;
+
+        font-size: 17px;
+
+        transition: 0.3s;
+      }
+
+      .message-btn:hover {
+        background: #023e8a;
+
+        transform: translateY(-3px);
+      }
+
+      .message-btn i {
+        margin-right: 8px;
+      }
+      p {
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="contact">
+      <h1 class="contact-title">Contact Me</h1>
+
+      <p class="contact-subtitle">
+        Thank you for visiting my portfolio. I'm an
+        <strong>Aspiring Software Engineer</strong> passionate about building
+        web applications and solving real-world problems. I am always open to
+        internships, project collaborations, and professional opportunities.
+        Feel free to connect with me!
+      </p>
+
+      <div class="contact-container">
+        <!-- Email -->
+
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+
+          <h3>Email</h3>
+
+          <p>marockiavarsha227@gmail.com</p>
+
+          <a href="mailto:marockiavarsha227@gmail.com"> Send Email </a>
+        </div>
+
+        <!-- GitHub -->
+
+        <div class="contact-card">
+          <img
+            src="https://cdn.simpleicons.org/github/181717"
+            alt="GitHub"
+            class="contact-logo"
+          />
+
+          <h3>GitHub</h3>
+
+          <p>Explore my coding projects and repositories.</p>
+
+          <a href="https://github.com/cchithramary-cell" target="_blank">
+            Visit Profile
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+
+        <div class="contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+
+          <h3>LinkedIn</h3>
+
+          <p>Let's connect professionally.</p>
+
+          <a
+            href="https://www.linkedin.com/in/arockia-varsha-m-b229163a0"
+            target="_blank"
+          >
+            Visit Profile
+          </a>
+        </div>
+
+        <!-- GeeksforGeeks -->
+
+        <div class="contact-card">
+          <img
+            src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
+            alt="GeeksforGeeks"
+            class="contact-logo"
+          />
+          <h3>GeeksforGeeks</h3>
+
+          <p>View my coding practice profile.</p>
+
+          <a
+            href="https://www.geeksforgeeks.org/profile/marockiavmtbd"
+            target="_blank"
+          >
+            Visit Profile
+          </a>
+        </div>
+
+        <!-- LeetCode -->
+
+        <div class="contact-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+            alt="LeetCode"
+            class="contact-logo"
+          />
+
+          <h3>LeetCode</h3>
+
+          <p>Follow my DSA learning journey.</p>
+
+          <a href="#" target="_blank"> Visit Profile </a>
+        </div>
+
+        <!-- Codolio -->
+
+        <div class="contact-card">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230077b6'/><text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='white'>C</text></svg>"
+            alt="Codolio"
+            class="contact-logo"
+          />
+
+          <h3>Codolio</h3>
+
+          <p>View my developer profile and achievements.</p>
+
+          <a href="https://codolio.com/profile/Arova/card" target="_blank">
+            Visit Profile
+          </a>
+        </div>
+
+        <!-- CodeChef -->
+
+        <div class="contact-card">
+          <img
+            src="https://cdn.codechef.com/images/cc-logo.svg"
+            alt="CodeChef"
+            class="contact-logo"
+          />
+
+          <h3>CodeChef</h3>
+
+          <p>
+            Explore my competitive programming profile and coding achievements.
+          </p>
+
+          <a href="https://www.codechef.com/users/arova" target="_blank">
+            Visit Profile
+          </a>
+        </div>
+      </div>
+      <!--================ THANK YOU SECTION ================-->
+
+      <div class="thank-you">
+        <h2>Let's Build Something Amazing Together!</h2>
+
+        <p>
+          Thank you for taking the time to explore my portfolio. I am an
+          <strong>Aspiring Software Engineer</strong> who is passionate about
+          learning new technologies, solving real-world problems, and building
+          impactful software applications.
+        </p>
+
+        <p>
+          I am always open to internship opportunities, software development
+          projects, and professional collaborations. If you have an opportunity
+          or simply want to connect, feel free to reach out.
+        </p>
+
+        <a href="mailto:marockiavarsha227@gmail.com" class="message-btn">
+          <i class="fa-solid fa-handshake"></i>
+          Let's Collaborate
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

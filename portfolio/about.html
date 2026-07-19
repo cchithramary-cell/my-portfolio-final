@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ================= ABOUT ME ================= */
+
+      #about {
+        padding: 20px 10%;
+        background: #f8f9fa;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 40px;
+        color: #0077b6;
+        margin-bottom: 50px;
+      }
+
+      .about-content {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about-image img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid #00b4d8;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .about-text {
+        flex: 2;
+      }
+
+      .about-text h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      .about-text p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .about-grid {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .info-card {
+        flex: 1;
+        min-width: 280px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-card h4 {
+        color: #0077b6;
+        margin-bottom: 15px;
+      }
+
+      .info-card p {
+        margin: 10px 0;
+        color: #444;
+      }
+
+      .info-card ul {
+        padding-left: 20px;
+      }
+
+      .info-card li {
+        margin: 10px 0;
+        color: #444;
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .about-text {
+          text-align: center;
+        }
+
+        .about-grid {
+          flex-direction: column;
+        }
+
+        .about-image img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- About Me Section -->
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about">
+      <div class="about-container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <!-- Profile Image -->
+
+          <div class="about-image">
+            <img src="./PROFILE.jpeg" alt="Arockia Varsha" />
+          </div>
+
+          <!-- About Content -->
+
+          <div class="about-text">
+            <h3>Hello, I'm Arockia Varsha 👋</h3>
+
+            <p>
+              I am a Final Year Computer Science Engineering student with a
+              passion for Software Development, Full Stack Development, and
+              Problem Solving. I enjoy building responsive web applications,
+              learning modern technologies, and transforming ideas into
+              practical software solutions. I continuously improve my
+              programming skills by working on real-world projects and solving
+              coding challenges.
+            </p>
+
+            <p>
+              My career goal is to become a Software Engineer where I can
+              utilize my technical knowledge, contribute to innovative projects,
+              solve challenging problems, and continuously grow both
+              professionally and personally.
+            </p>
+
+            <!-- Personal Information -->
+
+            <div class="about-grid">
+              <div class="info-card">
+                <h4>👤 Personal Information</h4>
+
+                <p><strong>Name :</strong> Arockia Varsha</p>
+
+                <p>
+                  <strong>Degree :</strong> B.E Computer Science Engineering
+                </p>
+
+                <p><strong>College :</strong> VV College of Engineering</p>
+
+                <p><strong>Year :</strong> Final Year</p>
+
+                <p><strong>Location :</strong> Tamil Nadu, India</p>
+              </div>
+
+              <div class="info-card">
+                <h4>🎯 Career Objective</h4>
+
+                <p>
+                  To secure a challenging Software Development role where I can
+                  apply my programming knowledge, continuously learn emerging
+                  technologies, solve real-world problems, and contribute
+                  effectively to innovative software projects while growing as a
+                  professional developer.
+                </p>
+              </div>
+            </div>
+
+            <!-- Achievements -->
+
+            <div class="about-grid">
+              <div class="info-card achievement-card">
+                <h4>🏆 Achievements</h4>
+
+                <div class="achievement-item">
+                  <span class="achievement-icon">🥇</span>
+
+                  <div>
+                    <h5>NPTEL Elite + Top 1%</h5>
+
+                    <p>
+                      Secured Elite Certification and ranked among the Top 1%
+                      performers in the NPTEL examination, demonstrating
+                      excellent academic performance.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="achievement-item">
+                  <span class="achievement-icon">💼</span>
+
+                  <div>
+                    <h5>IBM Naan Mudhalvan Internship</h5>
+
+                    <p>
+                      Successfully shortlisted for the IBM Naan Mudhalvan
+                      Internship Program and completed Full Stack Development
+                      training with industry-oriented learning.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="achievement-item">
+                  <span class="achievement-icon">👩‍💼</span>
+
+                  <div>
+                    <h5>Department Secretary</h5>
+
+                    <p>
+                      Serving as the Department Secretary of the Computer
+                      Science Engineering Department, coordinating departmental
+                      activities while strengthening leadership and
+                      communication skills.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="achievement-item">
+                  <span class="achievement-icon">🎓</span>
+
+                  <div>
+                    <h5>Department (Class) Topper</h5>
+
+                    <p>
+                      Recognized as the Department (Class) Topper for
+                      consistently achieving outstanding academic performance.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="achievement-item">
+                  <span class="achievement-icon">🚀</span>
+
+                  <div>
+                    <h5>GeeksforGeeks Institute Rank 1</h5>
+
+                    <p>
+                      Achieved Institute Rank 1 on GeeksforGeeks by consistently
+                      solving coding challenges and improving problem-solving
+                      abilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+
+            <div class="about-grid">
+              <!-- Languages & Soft Skills -->
+
+              <div class="info-card">
+                <h4>🌍 Languages</h4>
+
+                <ul>
+                  <li>English</li>
+
+                  <li>Tamil</li>
+                </ul>
+
+                <br />
+
+                <h4>🤝 Soft Skills</h4>
+
+                <ul>
+                  <li>Leadership</li>
+
+                  <li>Communication</li>
+
+                  <li>Problem Solving</li>
+
+                  <li>Teamwork</li>
+
+                  <li>Critical Thinking</li>
+
+                  <li>Adaptability</li>
+
+                  <li>Time Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

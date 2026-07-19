@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      /*================ PROJECTS ================*/
+
+      #projects {
+        padding: 10px 8%;
+
+        background: #f8fbff;
+      }
+
+      .project-title {
+        text-align: center;
+
+        font-size: 42px;
+
+        color: #0077b6;
+      }
+
+      .project-subtitle {
+        text-align: center;
+
+        margin: 20px auto 50px;
+
+        max-width: 750px;
+
+        color: #555;
+
+        line-height: 1.7;
+      }
+
+      .project-container {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+        gap: 30px;
+      }
+
+      .project-card {
+        background: white;
+
+        padding: 30px;
+
+        border-radius: 20px;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+        transition: 0.3s;
+
+        position: relative;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .status {
+        position: absolute;
+
+        top: 20px;
+
+        right: 20px;
+
+        padding: 6px 14px;
+
+        border-radius: 20px;
+
+        color: white;
+
+        font-size: 14px;
+      }
+
+      .completed {
+        background: #28a745;
+      }
+
+      .progress {
+        background: #ff9800;
+      }
+
+      .project-card h3 {
+        color: #0077b6;
+
+        margin: 15px 0;
+      }
+
+      .project-card p {
+        color: #555;
+
+        line-height: 1.7;
+      }
+
+      .tech {
+        margin: 20px 0;
+      }
+
+      .tech span {
+        display: inline-block;
+
+        margin: 5px;
+
+        padding: 8px 15px;
+
+        background: #0077b6;
+
+        color: white;
+
+        border-radius: 30px;
+
+        font-size: 14px;
+      }
+
+      .project-card ul {
+        padding-left: 20px;
+
+        margin-top: 15px;
+      }
+
+      .project-card li {
+        margin-bottom: 10px;
+
+        color: #444;
+      }
+
+      .project-btn {
+        margin-top: 25px;
+      }
+
+      .project-btn a {
+        display: inline-block;
+
+        margin-right: 15px;
+
+        text-decoration: none;
+
+        background: #0077b6;
+
+        color: white;
+
+        padding: 10px 18px;
+
+        border-radius: 30px;
+
+        transition: 0.3s;
+      }
+
+      .project-btn a:hover {
+        background: #023e8a;
+      }
+
+      @media (max-width: 768px) {
+        .project-title {
+          font-size: 34px;
+        }
+
+        #projects {
+          padding: 60px 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="projects">
+      <h2 class="project-title">My Projects</h2>
+
+      <p class="project-subtitle">
+        Here are some of the projects I have developed to strengthen my
+        technical skills and gain practical experience.
+      </p>
+
+      <div class="project-container">
+        <!-- QuoteVerse -->
+
+        <div class="project-card">
+          <div class="status completed">Completed</div>
+
+          <h3>QuoteVerse</h3>
+
+          <p>
+            A responsive quote generation web application that allows users to
+            explore motivational, life, knowledge, and devotional quotes.
+          </p>
+
+          <h4>Technologies Used</h4>
+
+          <div class="tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MySQL</span>
+          </div>
+
+          <ul>
+            <li>Random quote generation</li>
+            <li>Category-wise quotes</li>
+            <li>Responsive user interface</li>
+            <li>Modern web design</li>
+          </ul>
+
+          <div class="project-btn">
+            <a href="https://github.com/cchithramary-cell/mind-gallaxy"
+              >GitHub</a
+            >
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Smart AnganCare -->
+
+        <div class="project-card">
+          <div class="status progress">Ongoing</div>
+
+          <h3>Smart AnganCare</h3>
+
+          <p>
+            A Smart Anganwadi Management System designed to simplify child
+            health monitoring, attendance, vaccination tracking, and nutrition
+            management.
+          </p>
+
+          <h4>Technologies Used</h4>
+
+          <div class="tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MySQL</span>
+          </div>
+
+          <ul>
+            <li>Child Management</li>
+            <li>Vaccination Tracking</li>
+            <li>Growth Monitoring</li>
+            <li>Attendance Management</li>
+          </ul>
+
+          <div class="project-btn">
+            <a href="https://github.com/cchithramary-cell/Smart-AnganCare"
+              >GitHub</a
+            >
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+
+        <div class="project-card">
+          <div class="status progress">Ongoing</div>
+
+          <h3>Personal Portfolio</h3>
+
+          <p>
+            A professional portfolio website showcasing my education, technical
+            skills, internships, projects, certifications, and contact
+            information.
+          </p>
+
+          <h4>Technologies Used</h4>
+
+          <div class="tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <ul>
+            <li>Responsive Design</li>
+            <li>Download Resume</li>
+            <li>Interactive Sections</li>
+            <li>Professional UI</li>
+          </ul>
+
+          <div class="project-btn">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

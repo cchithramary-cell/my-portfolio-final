@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("https://img.magnific.com/free-photo/laptop-coffee-cups-notepads-black-background-top-view_169016-36160.jpg?semt=ais_hybrid&w=740&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 2px 2px red;
+      }
+      .nav-container {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        flex-wrap: wrap;
+        max-width: 100%;
+      }
+
+      #name {
+        margin: 0;
+        color: orangered;
+        font-size: 30px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: red;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        background-color: black;
+        color: antiquewhite;
+      }
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        gap: 40px;
+      }
+
+      .hero-content {
+        flex: 1;
+      }
+
+      .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-image img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid #00bcd4;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      span {
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 1px 1px palevioletred;
+      }
+      span {
+        font-style: italic;
+        color: rgb(0, 145, 255);
+        text-shadow: 2px 2px red;
+      }
+      p {
+        color: rgb(165, 73, 201);
+        font-style: italic;
+        font-weight: bold;
+      }
+      button {
+        background-color: rgb(244, 77, 77);
+        color: white;
+        border-radius: 40px;
+        width: fit-content;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-color: black;
+      }
+      #btn {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      footer {
+        background-color: whitesmoke;
+        color: black;
+        margin-top: 120px;
+        text-align: left;
+        padding: 20px;
+      }
+      .social {
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+
+        text-decoration: none;
+        margin-right: 0px;
+      }
+      .social a {
+        color: deeppink;
+        text-decoration: none;
+        margin-right: 0px;
+        text-align: justify;
+      }
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        .nav-container {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero {
+          width: 95%;
+          margin: 20px auto;
+        }
+
+        #btn {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        footer {
+          text-align: center;
+        }
+
+        .social {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #ff5e57;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #e63946;
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <i>PERSONAL PORTFOLIO</i>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <p id="name">Arockia Varsha M</p>
+
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="internship.html">Internship</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cert.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="hero">
+        <div class="hero-image">
+          <img src="./PROFILE.jpeg" alt="Arockia Varsha" />
+        </div>
+        <h1>HELLO!<br />I am <span>AROCKIA VARSHA</span></h1>
+        <br />
+
+        <p>
+          A dedicated Computer Science Engineering student with strong interest
+          in software development and coding .<br />Skilled in Java,C
+          Programming,DBMS,and problem-solving.<br />Seeking opportunities to
+          apply my technical knowledge and contribute to impactful projects.
+        </p>
+        <br />
+        <div id="btn">
+          <a href="./Arockia_Varsha_M_Resume_v2.pdf" download class="btn"
+            >Download Resume</a
+          >
+          <a href="projects.html" class="btn">View Projects</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>©2026 Arockia Varsha .All Rights Reserved</p>
+      <div class="social">
+        <h4>CONTACT:</h4>
+        <a href="mailto:marockiavarsha227@gmail.com">EMAIL</a><br />
+        <a href="https://github.com/cchithramary-cell">Github</a><br />
+        <a href="mailto:marockiavarsha227@gmail.com">LinkedIn</a><br />
+      </div>
+    </footer>
+  </body>
+</html>

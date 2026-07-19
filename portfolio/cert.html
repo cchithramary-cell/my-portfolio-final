@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(180deg, #f7fbff 0%, #eef3f8 100%);
+      }
+
+      /*================= CERTIFICATES =================*/
+
+      #certificates {
+        width: 90%;
+        margin: auto;
+        padding: 60px 0;
+      }
+
+      .certificate-title {
+        text-align: center;
+        color: #0077b6;
+        font-size: 42px;
+        margin-bottom: 15px;
+      }
+
+      .certificate-subtitle {
+        text-align: center;
+        color: #555;
+        width: 80%;
+        margin: auto;
+        line-height: 1.7;
+        margin-bottom: 50px;
+      }
+
+      .category-heading {
+        margin-top: 60px;
+        margin-bottom: 26px;
+        padding: 12px 18px;
+        color: #023e8a;
+        font-size: 32px;
+        border-left: 5px solid #0077b6;
+        background: rgba(0, 119, 182, 0.08);
+        border-radius: 12px;
+        display: inline-block;
+      }
+
+      .certificate-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .certificate-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f5fbff 100%);
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        flex: 1 1 260px;
+        max-width: 320px;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #d8edf8;
+      }
+
+      .certificate-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        border-color: #90e0ef;
+      }
+
+      .certificate-card h3 {
+        color: #0077b6;
+        margin-bottom: 15px;
+      }
+
+      .certificate-card p {
+        color: #555;
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+
+      .certificate-btn {
+        margin-top: 20px;
+      }
+
+      .certificate-btn a {
+        text-decoration: none;
+        background: linear-gradient(135deg, #0077b6, #0096c7);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: 0.3s;
+        display: inline-block;
+        box-shadow: 0 6px 14px rgba(0, 119, 182, 0.25);
+      }
+
+      .certificate-btn a:hover {
+        background: linear-gradient(135deg, #023e8a, #0077b6);
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 900px) {
+        .certificate-card {
+          flex: 1 1 45%;
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #certificates {
+          width: 95%;
+        }
+
+        .certificate-title {
+          font-size: 34px;
+        }
+
+        .certificate-subtitle {
+          width: 100%;
+        }
+
+        .category-heading {
+          font-size: 26px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .certificate-card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="certificates">
+      <h1 class="certificate-title">Certificates</h1>
+
+      <p class="certificate-subtitle">
+        My certifications represent my continuous learning journey through
+        internships, professional courses, technical workshops and
+        extracurricular activities.
+      </p>
+
+      <!--================ INTERNSHIPS ================-->
+
+      <h2 class="category-heading">Internships</h2>
+
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <h3>IBM Cognos Analytics Internship</h3>
+
+          <p><strong>Organization :</strong> IBM / Adroit Technologies</p>
+
+          <p>
+            Virtual Internship on Data Analytics using IBM Cognos Analytics.
+          </p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/IBM.pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Linux Internship</h3>
+
+          <p><strong>Organization :</strong> Jemysto Tech</p>
+
+          <p>
+            Completed Linux Administration Internship with hands-on practice.
+          </p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/Jemysto%20Tech.pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Frontend Development</h3>
+
+          <p><strong>Organization :</strong>Mavepizon technologies pvt limited</p>
+
+          <p>Successfully completed Frontend Development workshop.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/internship.jpg" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Web Developer Internship</h3>
+
+          <p><strong>Organization :</strong> Voxlom Innovative Solution pvt ltd</p>
+
+          <p>Worked as a Web Developer Intern.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/Internship%20(vipl).pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--================ NPTEL ================-->
+
+      <h2 class="category-heading">NPTEL</h2>
+
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <h3>Data Structures and Algorithms Design</h3>
+
+          <p><strong>Organization :</strong> NPTEL</p>
+
+          <p>Successfully completed the NPTEL online certification course.</p>
+
+          <div class="certificate-btn">
+            <a
+              href="./certificates/NPTEL25CS81S37060023010634247.pdf"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Programming in Java</h3>
+
+          <p><strong>Organization :</strong> NPTEL</p>
+
+          <p>Successfully completed the NPTEL online certification course.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/Programming%20in%20Java.pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--================ NAAN MUDHALVAN ================-->
+
+      <h2 class="category-heading">Naan Mudhalvan</h2>
+
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <h3>Infosys Springboard</h3>
+
+          <p><strong>Organization :</strong> Naan Mudhalvan</p>
+
+          <p>Industry-oriented technical learning program.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/Infosys%20Springboard.pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Naan Mudhalvan Training</h3>
+
+          <p><strong>Organization :</strong> Government of Tamil Nadu</p>
+
+          <p>Successfully completed technical training under Naan Mudhalvan.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/Naan%20Mudhalavan.pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <h3>NM Certificate (EBPL)</h3>
+
+          <p><strong>Organization :</strong> Naan Mudhalvan</p>
+
+          <p>Completed industry training program.</p>
+
+          <div class="certificate-btn">
+            <a href="./certificates/NM_Certificate(EBPL).pdf" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--================ EXTRA ACTIVITIES ================-->
+
+      <h2 class="category-heading">Extra Activities</h2>
+
+      <div class="certificate-container">
+
+    <!-- IBM Skills Network -->
+
+    <div class="certificate-card">
+
+        <h3>IBM Skills Network</h3>
+
+        <p><strong>Organization :</strong> IBM Skills Network</p>
+
+        <p>Completed Web Development Fundamentals certification.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/IBMSkillsNetwork%20WD0102EN%20Certificate%20_%20TNSD%20Corporation.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Wadhwani -->
+
+    <div class="certificate-card">
+
+        <h3>Wadhwani Foundation</h3>
+
+        <p><strong>Organization :</strong> Wadhwani Foundation</p>
+
+        <p>Completed Employability Skills Program.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/Wadhwani.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Symposium -->
+
+    <div class="certificate-card">
+
+        <h3>Technical Symposium</h3>
+
+        <p><strong>Category :</strong> Technical Event</p>
+
+        <p>Participated in technical symposium and coding events.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/Symposium.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Appreciation -->
+
+    <div class="certificate-card">
+
+        <h3>Appreciation Certificate</h3>
+
+        <p><strong>Category :</strong> Recognition</p>
+
+        <p>Received appreciation for participation and contribution.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/Appreciation.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Achievement 2nd Year -->
+
+    <div class="certificate-card">
+
+        <h3>Achievement - II Year</h3>
+
+        <p><strong>Category :</strong> Academic Achievement</p>
+
+        <p>Recognized for academic performance.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/__%20year.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Achievement 3rd Year -->
+
+    <div class="certificate-card">
+
+        <h3>Achievement - III Year</h3>
+
+        <p><strong>Category :</strong> Academic Achievement</p>
+
+        <p>Recognized for academic excellence.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/___%20year.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- IDHAYAM -->
+
+    <div class="certificate-card">
+
+        <h3>IDHAYAM</h3>
+
+        <p><strong>Category :</strong> Social Activity</p>
+
+        <p>Participated in social service and volunteer activities.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/IDHAYAM.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Spartan -->
+
+    <div class="certificate-card">
+
+        <h3>Spartan</h3>
+
+        <p><strong>Category :</strong> Technical Event</p>
+
+        <p>Participated in technical competitions and events.</p>
+
+        <div class="certificate-btn">
+
+            <a href="./certificates/Spartan.pdf" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+   
+      </div>
+    </section>
+  </body>
+</html>

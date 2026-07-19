@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ================= EDUCATION SECTION ================= */
+
+      #education {
+        padding: 80px 8%;
+        background: #f8f9fa;
+      }
+
+      .education-title {
+        text-align: center;
+        font-size: 42px;
+        color: #0077b6;
+      }
+
+      .education-subtitle {
+        text-align: center;
+        color: #555;
+        margin: 15px auto 50px;
+        max-width: 700px;
+        line-height: 1.6;
+      }
+
+      .education-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .education-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 18px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .education-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .education-icon {
+        font-size: 45px;
+        margin-bottom: 15px;
+      }
+
+      .education-card h3 {
+        color: #0077b6;
+        margin-bottom: 10px;
+      }
+
+      .education-card h4 {
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .education-card p {
+        color: #555;
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        #education {
+          padding: 60px 5%;
+        }
+
+        .education-title {
+          font-size: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= EDUCATION SECTION ================= -->
+
+    <section id="education">
+      <h2 class="education-title">Education</h2>
+
+      <p class="education-subtitle">
+        My academic journey has provided me with a strong foundation in computer
+        science and technology.
+      </p>
+
+      <div class="education-container">
+        <div class="education-card">
+          <div class="education-icon">🎓</div>
+
+          <h3>B.E. Computer Science & Engineering</h3>
+
+          <h4>V.V. College of Engineering, Tisayanvilai</h4>
+
+          <p><strong>Duration:</strong> 2023 – 2027</p>
+
+          <p><strong>CGPA:</strong> 9.2</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-icon">🏫</div>
+
+          <h3>Higher Secondary (12th)</h3>
+
+          <h4>Holy Redeemer's Hr. Sec. School</h4>
+          <p><strong>Duration:</strong> 2021 – 2023</p>
+
+          <p><strong>Percentage:</strong> 88%</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-icon">📖</div>
+
+          <h3>SSLC (10th)</h3>
+
+          <h4>St. Stella Mary's Girls Hr. Sec. School</h4>
+          <p><strong>Duration:</strong> 2019 – 2021</p>
+
+          <p><strong>Successfully Completed</strong></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
